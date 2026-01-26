@@ -1021,32 +1021,77 @@ button {
 }
 
 /* ============================================
-   RESPONSIVE DESIGN
+   RESPONSIVE DESIGN - HEADER/NAVBAR
 ============================================ */
 
 @media (max-width: 768px) {
-  .nav-container {
-    flex-wrap: wrap;
-  }
+    .navbar {
+        padding: var(--spacing-xs) 0;
+    }
 
-  .search-box {
-    order: 3;
-    flex: 1 1 100%;
-    max-width: 100%;
-  }
+    .nav-container {
+        flex-direction: column;
+        gap: var(--spacing-sm);
+        align-items: stretch;
+    }
 
-  .search-suggestions,
-  .popular-searches {
-    max-height: 250px;
-  }
+    /* Logo centrado y más pequeño */
+    .logo {
+        text-align: center;
+        order: 1;
+    }
 
-  .popular-tags {
-    justify-content: center;
-  }
+    .logo img {
+        height: 50px;
+        margin: 0 auto;
+    }
 
-  .mobile-menu-toggle {
-    display: block;
-  }
+    /* Buscador debajo del logo */
+    .search-box {
+        order: 2;
+        max-width: 100%;
+        width: 100%;
+    }
+
+    .search-box input {
+        width: 100%;
+        padding: 10px 40px 10px 15px;
+        font-size: 0.9rem;
+    }
+
+    .search-box i {
+        right: 15px;
+    }
+
+    /* Contacto/Redes al final */
+    .nav-contact {
+        order: 3;
+        justify-content: center;
+        gap: var(--spacing-sm);
+    }
+
+    .whatsapp-btn,
+    .social-link {
+        width: 40px;
+        height: 40px;
+        font-size: 1.1rem;
+    }
+
+    /* Sugerencias y búsquedas populares en móvil */
+    .search-suggestions,
+    .popular-searches {
+        max-height: 250px;
+        font-size: 0.9rem;
+    }
+
+    .suggestion-item {
+        padding: 10px 15px;
+    }
+
+    .popular-tag {
+        padding: 6px 12px;
+        font-size: 0.8rem;
+    }
 
   .hero {
     height: 60vh;
@@ -1108,6 +1153,26 @@ button {
 }
 
 @media (max-width: 480px) {
+    .logo img {
+        height: 45px;
+    }
+
+    .search-box input {
+        padding: 8px 35px 8px 12px;
+        font-size: 0.85rem;
+    }
+
+    .whatsapp-btn,
+    .social-link {
+        width: 38px;
+        height: 38px;
+        font-size: 1rem;
+    }
+
+    .nav-contact {
+        gap: 10px;
+    }
+
   .hero {
     height: 50vh;
     min-height: 400px;
@@ -1183,23 +1248,5 @@ button {
 @keyframes spin {
   to {
     transform: translate(-50%, -50%) rotate(360deg);
-  }
-}
-@media (max-width: 768px) {
-  .search-box {
-    position: fixed;
-    top: 80px;
-    left: 0;
-    right: 0;
-    background: white;
-    padding: var(--spacing-sm);
-    box-shadow: var(--shadow-md);
-    transform: translateY(-150%);
-    transition: var(--transition-normal);
-    z-index: 999;
-  }
-
-  .search-box.mobile-active {
-    transform: translateY(0);
   }
 }
