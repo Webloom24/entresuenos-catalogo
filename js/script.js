@@ -36,9 +36,9 @@ const noResults = document.getElementById("noResults");
 // Datos de sugerencias
 const suggestions = [
   {
-    text: "Sábana 3D Relieve Geométrico",
-    category: "3D",
-    keywords: ["3d", "relieve", "geometrico", "textura"],
+    text: "Sábana Texturizada Relieve Geométrico",
+    category: "Texturizada",
+    keywords: ["texturizada", "relieve", "geometrico", "textura"],
   },
   {
     text: "Sábana Suave Premium",
@@ -105,7 +105,7 @@ const suggestions = [
 // Placeholder dinámico
 const placeholders = [
   "Buscar sábanas...",
-  "Ej: 3D, lisa, estampada",
+  "Ej: texturizada, lisa, estampada",
   "Ej: gris, rosa, azul",
   "Ej: donas, huellitas, stitch",
   "Buscar por color o diseño...",
