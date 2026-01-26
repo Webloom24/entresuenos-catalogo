@@ -1,0 +1,755 @@
+<!doctype html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Entre Sueños - Sábanas térmicas de alta calidad en Colombia. Hechas para abrigar tus sueños."
+    />
+    <meta
+      name="keywords"
+      content="sábanas térmicas, sábanas colombia, sábanas 3D, sábanas estampadas, sábanas lisas"
+    />
+    <title>
+      Entre Sueños - Sábanas Térmicas | Hechas para abrigar tus sueños
+    </title>
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- Font Awesome -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    />
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="css/styles.css" />
+  </head>
+  <body>
+    <!-- HEADER/NAVBAR -->
+    <header class="header" id="header">
+      <nav class="navbar">
+        <div class="container nav-container">
+          <!-- Logo -->
+          <div class="logo">
+            <img src="assets/images/logo.png" alt="Entre Sueños Logo" />
+          </div>
+
+          <!-- Buscador -->
+          <div class="search-box">
+            <input
+              type="text"
+              id="searchInput"
+              placeholder="Buscar sábanas..."
+            />
+            <i class="fas fa-search"></i>
+
+            <!-- Sugerencias de búsqueda -->
+            <div class="search-suggestions" id="searchSuggestions">
+              <!-- Se llenará dinámicamente -->
+            </div>
+
+            <!-- Búsquedas populares (aparece cuando el input está vacío) -->
+            <div class="popular-searches" id="popularSearches">
+              <p class="popular-title">🔥 Búsquedas populares:</p>
+              <div class="popular-tags">
+                <button class="popular-tag" data-search="3d">Sábanas 3D</button>
+                <button class="popular-tag" data-search="lisa">Sábanas Lisas</button>
+                <button class="popular-tag" data-search="estampada">Sábanas Estampadas</button>
+                <button class="popular-tag" data-search="gris">Color Gris</button>
+                <button class="popular-tag" data-search="rosa">Color Rosa</button>
+                <button class="popular-tag" data-search="azul">Color Azul</button>
+              </div>
+            </div>
+
+            <!-- Mensaje cuando no hay resultados -->
+            <div class="no-results" id="noResults" style="display: none;">
+              <i class="fas fa-search"></i>
+              <p>No encontramos resultados para "<span id="searchTerm"></span>"</p>
+              <p class="suggestion">Intenta buscar: "3D", "lisa", "estampada", "gris", "rosa"</p>
+            </div>
+          </div>
+
+          <!-- Contacto y Redes -->
+          <div class="nav-contact">
+            <a
+              href="https://wa.me/573176750772"
+              target="_blank"
+              class="whatsapp-btn"
+              title="WhatsApp"
+            >
+              <i class="fab fa-whatsapp"></i>
+            </a>
+            <a
+              href="https://www.instagram.com/sabanasentresuenos"
+              target="_blank"
+              class="social-link"
+              title="Instagram"
+            >
+              <i class="fab fa-instagram"></i>
+            </a>
+            <a
+              href="https://www.tiktok.com/@entresabanas_sue"
+              target="_blank"
+              class="social-link"
+              title="TikTok"
+            >
+              <i class="fab fa-tiktok"></i>
+            </a>
+          </div>
+
+        </div>
+      </nav>
+    </header>
+
+    <!-- HERO SECTION -->
+    <section class="hero">
+      <div class="hero-overlay"></div>
+      <div class="hero-content">
+        <h1 class="hero-title">Entre Sueños</h1>
+        <p class="hero-slogan">Hechas para abrigar tus sueños</p>
+        <p class="hero-subtitle">
+          Sábanas térmicas de alta calidad en Colombia
+        </p>
+        <a
+          href="https://wa.me/573176750772?text=Hola!%20Me%20interesa%20conocer%20más%20sobre%20las%20sábanas%20térmicas"
+          target="_blank"
+          class="btn-primary"
+        >
+          <i class="fab fa-whatsapp"></i> Contáctanos por WhatsApp
+        </a>
+      </div>
+    </section>
+
+    <!-- CARACTERÍSTICAS -->
+    <section class="features">
+      <div class="container">
+        <div class="features-grid">
+          <div class="feature-card">
+            <div class="feature-icon">
+              <i class="fas fa-truck"></i>
+            </div>
+            <h3>Envío Nacional</h3>
+            <p>Llevamos tus sábanas a toda Colombia</p>
+          </div>
+
+          <div class="feature-card">
+            <div class="feature-icon">
+              <i class="fas fa-temperature-high"></i>
+            </div>
+            <h3>Calidad Térmica</h3>
+            <p>Material térmico de alta calidad</p>
+          </div>
+
+          <div class="feature-card">
+            <div class="feature-icon">
+              <i class="fas fa-palette"></i>
+            </div>
+            <h3>Variedad de Diseños</h3>
+            <p>Encuentra el estilo perfecto para ti</p>
+          </div>
+
+          <div class="feature-card">
+            <div class="feature-icon">
+              <i class="fas fa-headset"></i>
+            </div>
+            <h3>Atención Personalizada</h3>
+            <p>Te asesoramos en tu compra</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- GUÍA VISUAL DE TIPOS -->
+    <section class="types-guide">
+      <div class="container">
+        <h2 class="section-title">Encuentra tu estilo perfecto</h2>
+        <p class="section-subtitle">
+          Tenemos 3 tipos de sábanas para diferentes gustos
+        </p>
+
+        <div class="types-grid">
+          <div class="type-card" data-type="3d">
+            <div class="type-image">
+              <img
+                src="assets/images/productos/3D azul oscuro.png"
+                alt="Sábanas 3D"
+              />
+              <div class="type-overlay">
+                <h3>Sábanas 3D</h3>
+                <p>Diseño moderno con textura en relieve</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="type-card" data-type="lisa">
+            <div class="type-image">
+              <img
+                src="assets/images/productos/Rosa Suave LISAS.png"
+                alt="Sábanas Lisas"
+              />
+              <div class="type-overlay">
+                <h3>Sábanas Lisas</h3>
+                <p>Elegancia clásica y versatilidad</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="type-card" data-type="estampada">
+            <div class="type-image">
+              <img
+                src="assets/images/productos/Lila Donas ESTAMPADAS.png"
+                alt="Sábanas Estampadas"
+              />
+              <div class="type-overlay">
+                <h3>Sábanas Estampadas</h3>
+                <p>Personalidad y color para tu espacio</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- FILTROS DE CATEGORÍA -->
+    <section class="filters-section">
+      <div class="container">
+        <div class="filters">
+          <button class="filter-btn active" data-filter="all">Todas</button>
+          <button class="filter-btn" data-filter="3d">3D</button>
+          <button class="filter-btn" data-filter="lisa">Lisas</button>
+          <button class="filter-btn" data-filter="estampada">Estampadas</button>
+        </div>
+      </div>
+    </section>
+
+    <!-- CATÁLOGO DE PRODUCTOS -->
+    <section class="catalog" id="catalog">
+      <div class="container">
+        <h2 class="section-title">Nuestro Catálogo</h2>
+
+        <div class="products-grid">
+          <!-- PRODUCTO 1: SÁBANA 3D -->
+          <div
+            class="product-card"
+            data-category="3d"
+            data-name="Sábana 3D Relieve Geométrico"
+          >
+            <div class="product-image-container">
+              <img
+                src="assets/images/productos/3D azul oscuro.png"
+                alt="Sábana 3D Azul Oscuro"
+                class="product-image active"
+                data-color="azul-oscuro"
+              />
+              <img
+                src="assets/images/productos/3D gris oscuro.png"
+                alt="Sábana 3D Gris Oscuro"
+                class="product-image"
+                data-color="gris-oscuro"
+              />
+              <img
+                src="assets/images/productos/3D gris perla.png"
+                alt="Sábana 3D Gris Perla"
+                class="product-image"
+                data-color="gris-perla"
+              />
+              <img
+                src="assets/images/productos/3D kaki.png"
+                alt="Sábana 3D Kaki"
+                class="product-image"
+                data-color="kaki"
+              />
+              <img
+                src="assets/images/productos/3D rosado bebe.png"
+                alt="Sábana 3D Rosado Bebé"
+                class="product-image"
+                data-color="rosado-bebe"
+              />
+            </div>
+
+            <div class="product-info">
+              <h3 class="product-name">Sábana 3D Relieve Geométrico</h3>
+              <p class="product-description">
+                Diseño moderno con textura en alto relieve
+              </p>
+
+              <!-- Selector de Colores -->
+              <div class="color-selector">
+                <p class="selector-label">Color:</p>
+                <div class="color-options">
+                  <button
+                    class="color-option active"
+                    data-color="azul-oscuro"
+                    style="background: #1e3a5f"
+                    title="Azul Oscuro"
+                  ></button>
+                  <button
+                    class="color-option"
+                    data-color="gris-oscuro"
+                    style="background: #4a4a4a"
+                    title="Gris Oscuro"
+                  ></button>
+                  <button
+                    class="color-option"
+                    data-color="gris-perla"
+                    style="background: #b8b8b8"
+                    title="Gris Perla"
+                  ></button>
+                  <button
+                    class="color-option"
+                    data-color="kaki"
+                    style="background: #8b7d6b"
+                    title="Kaki"
+                  ></button>
+                  <button
+                    class="color-option"
+                    data-color="rosado-bebe"
+                    style="background: #f4c2c2"
+                    title="Rosado Bebé"
+                  ></button>
+                </div>
+                <span class="selected-color-name">Azul Oscuro</span>
+              </div>
+
+              <!-- Selector de Medidas -->
+              <div class="size-selector">
+                <p class="selector-label">Medida:</p>
+                <select class="size-select">
+                  <option value="Sencilla 100x190">Sencilla 100x190</option>
+                  <option value="Semidoble 120x190">Semidoble 120x190</option>
+                  <option value="Doble 140x190">Doble 140x190</option>
+                  <option value="Queen 200x200" selected>Queen 200x200</option>
+                </select>
+              </div>
+
+              <!-- Precio y Botón -->
+              <div class="product-footer">
+                <p class="product-price">Consultar precio</p>
+                <button
+                  class="btn-whatsapp"
+                  data-product="Sábana 3D Relieve Geométrico"
+                >
+                  <i class="fab fa-whatsapp"></i> Pedir por WhatsApp
+                </button>
+              </div>
+            </div>
+          </div>
+
+          <!-- PRODUCTO 2: SÁBANA SUAVE PREMIUM -->
+          <div
+            class="product-card"
+            data-category="lisa"
+            data-name="Sábana Suave Premium"
+          >
+            <div class="product-image-container">
+              <img
+                src="assets/images/productos/Rosa Suave LISAS.png"
+                alt="Sábana Rosa Suave"
+                class="product-image active"
+                data-color="rosa-suave"
+              />
+              <img
+                src="assets/images/productos/Chocolate Suave LISAS.png"
+                alt="Sábana Chocolate Suave"
+                class="product-image"
+                data-color="chocolate-suave"
+              />
+              <img
+                src="assets/images/productos/Blanco Suave LISAS.png"
+                alt="Sábana Blanco Suave"
+                class="product-image"
+                data-color="blanco-suave"
+              />
+              <img
+                src="assets/images/productos/Fucsia Suave LISAS.png"
+                alt="Sábana Fucsia Suave"
+                class="product-image"
+                data-color="fucsia-suave"
+              />
+              <img
+                src="assets/images/productos/Negro Suave LISAS.png"
+                alt="Sábana Negro Suave"
+                class="product-image"
+                data-color="negro-suave"
+              />
+              <img
+                src="assets/images/productos/Beige Suave LISAS.png"
+                alt="Sábana Beige Suave"
+                class="product-image"
+                data-color="beige-suave"
+              />
+              <img
+                src="assets/images/productos/Azul Suave LISAS.png"
+                alt="Sábana Azul Suave"
+                class="product-image"
+                data-color="azul-suave"
+              />
+            </div>
+
+            <div class="product-info">
+              <h3 class="product-name">Sábana Suave Premium</h3>
+              <p class="product-description">
+                Elegancia clásica con textura suave al tacto
+              </p>
+
+              <!-- Selector de Colores -->
+              <div class="color-selector">
+                <p class="selector-label">Color:</p>
+                <div class="color-options">
+                  <button
+                    class="color-option active"
+                    data-color="rosa-suave"
+                    style="background: #ffc0cb"
+                    title="Rosa Suave"
+                  ></button>
+                  <button
+                    class="color-option"
+                    data-color="chocolate-suave"
+                    style="background: #6f4e37"
+                    title="Chocolate Suave"
+                  ></button>
+                  <button
+                    class="color-option"
+                    data-color="blanco-suave"
+                    style="background: #f5f5f5"
+                    title="Blanco Suave"
+                  ></button>
+                  <button
+                    class="color-option"
+                    data-color="fucsia-suave"
+                    style="background: #ff00ff"
+                    title="Fucsia Suave"
+                  ></button>
+                  <button
+                    class="color-option"
+                    data-color="negro-suave"
+                    style="background: #2c2c2c"
+                    title="Negro Suave"
+                  ></button>
+                  <button
+                    class="color-option"
+                    data-color="beige-suave"
+                    style="background: #d4c4a8"
+                    title="Beige Suave"
+                  ></button>
+                  <button
+                    class="color-option"
+                    data-color="azul-suave"
+                    style="background: #87ceeb"
+                    title="Azul Suave"
+                  ></button>
+                </div>
+                <span class="selected-color-name">Rosa Suave</span>
+              </div>
+
+              <!-- Selector de Medidas -->
+              <div class="size-selector">
+                <p class="selector-label">Medida:</p>
+                <select class="size-select">
+                  <option value="Sencilla 100x190">Sencilla 100x190</option>
+                  <option value="Semidoble 120x190">Semidoble 120x190</option>
+                  <option value="Doble 140x190">Doble 140x190</option>
+                  <option value="Queen 200x200" selected>Queen 200x200</option>
+                </select>
+              </div>
+
+              <!-- Precio y Botón -->
+              <div class="product-footer">
+                <p class="product-price">Consultar precio</p>
+                <button
+                  class="btn-whatsapp"
+                  data-product="Sábana Suave Premium"
+                >
+                  <i class="fab fa-whatsapp"></i> Pedir por WhatsApp
+                </button>
+              </div>
+            </div>
+          </div>
+
+          <!-- PRODUCTO 3: SÁBANA ESTAMPADA DISEÑOS EXCLUSIVOS -->
+          <div
+            class="product-card"
+            data-category="estampada"
+            data-name="Sábana Estampada Diseños Exclusivos"
+          >
+            <div class="product-image-container">
+              <img
+                src="assets/images/productos/Lila Donas ESTAMPADAS.png"
+                alt="Sábana Donas"
+                class="product-image active"
+                data-color="donas"
+              />
+              <img
+                src="assets/images/productos/Blanco Huellitas ESTAMPADAS.png"
+                alt="Sábana Huellitas"
+                class="product-image"
+                data-color="huellitas"
+              />
+              <img
+                src="assets/images/productos/Blanco Barbie ESTAMPADAS.png"
+                alt="Sábana Barbie"
+                class="product-image"
+                data-color="barbie"
+              />
+              <img
+                src="assets/images/productos/Negro Corazones ESTAMPADAS.png"
+                alt="Sábana Corazones Negro"
+                class="product-image"
+                data-color="corazones-negro"
+              />
+              <img
+                src="assets/images/productos/Gris Corazones ESTAMPADAS.png"
+                alt="Sábana Corazones Gris"
+                class="product-image"
+                data-color="corazones-gris"
+              />
+              <img
+                src="assets/images/productos/Rayas Rojo Blanco ESTAMPADAS.png"
+                alt="Sábana Rayas"
+                class="product-image"
+                data-color="rayas"
+              />
+              <img
+                src="assets/images/productos/Azul Stitch ESTAMPADAS.png"
+                alt="Sábana Stitch"
+                class="product-image"
+                data-color="stitch"
+              />
+            </div>
+
+            <div class="product-info">
+              <h3 class="product-name">Sábana Estampada Diseños Exclusivos</h3>
+              <p class="product-description">
+                Personalidad y diversión para tu habitación
+              </p>
+
+              <!-- Selector de Diseños -->
+              <div class="color-selector">
+                <p class="selector-label">Diseño:</p>
+                <div class="design-options">
+                  <button
+                    class="design-option active"
+                    data-color="donas"
+                    title="Donas"
+                  >
+                    🍩
+                  </button>
+                  <button
+                    class="design-option"
+                    data-color="huellitas"
+                    title="Huellitas"
+                  >
+                    🐾
+                  </button>
+                  <button
+                    class="design-option"
+                    data-color="barbie"
+                    title="Barbie"
+                  >
+                    💕
+                  </button>
+                  <button
+                    class="design-option"
+                    data-color="corazones-negro"
+                    title="Corazones Negro"
+                  >
+                    🖤
+                  </button>
+                  <button
+                    class="design-option"
+                    data-color="corazones-gris"
+                    title="Corazones Gris"
+                  >
+                    🩶
+                  </button>
+                  <button
+                    class="design-option"
+                    data-color="rayas"
+                    title="Rayas"
+                  >
+                    📏
+                  </button>
+                  <button
+                    class="design-option"
+                    data-color="stitch"
+                    title="Stitch"
+                  >
+                    👽
+                  </button>
+                </div>
+                <span class="selected-color-name">Donas</span>
+              </div>
+
+              <!-- Selector de Medidas -->
+              <div class="size-selector">
+                <p class="selector-label">Medida:</p>
+                <select class="size-select">
+                  <option value="Sencilla 100x190">Sencilla 100x190</option>
+                  <option value="Semidoble 120x190">Semidoble 120x190</option>
+                  <option value="Doble 140x190">Doble 140x190</option>
+                  <option value="Queen 200x200" selected>Queen 200x200</option>
+                </select>
+              </div>
+
+              <!-- Precio y Botón -->
+              <div class="product-footer">
+                <p class="product-price">Consultar precio</p>
+                <button
+                  class="btn-whatsapp"
+                  data-product="Sábana Estampada Diseños Exclusivos"
+                >
+                  <i class="fab fa-whatsapp"></i> Pedir por WhatsApp
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- TABLA DE MEDIDAS -->
+    <section class="size-guide">
+      <div class="container">
+        <h2 class="section-title">Guía de Medidas</h2>
+        <div class="size-table">
+          <div class="size-row">
+            <div class="size-col">
+              <i class="fas fa-bed"></i>
+              <h4>Sencilla</h4>
+              <p>100 x 190 cm</p>
+            </div>
+            <div class="size-col">
+              <i class="fas fa-bed"></i>
+              <h4>Semidoble</h4>
+              <p>120 x 190 cm</p>
+            </div>
+            <div class="size-col">
+              <i class="fas fa-bed"></i>
+              <h4>Doble</h4>
+              <p>140 x 190 cm</p>
+            </div>
+            <div class="size-col">
+              <i class="fas fa-bed"></i>
+              <h4>Queen</h4>
+              <p>200 x 200 cm</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- SOBRE NOSOTROS -->
+    <section class="about">
+      <div class="container">
+        <div class="about-content">
+          <h2 class="section-title">Sobre Entre Sueños</h2>
+          <p class="about-text">
+            En <strong>Entre Sueños</strong> creemos que un buen descanso es
+            fundamental para tu bienestar. Por eso, nos especializamos en
+            sábanas térmicas de alta calidad que combinan confort, calidez y
+            estilo para transformar tu habitación en un refugio acogedor.
+          </p>
+          <p class="about-text">
+            Cada una de nuestras sábanas está cuidadosamente seleccionada para
+            ofrecerte la mejor experiencia de descanso. Trabajamos con
+            materiales térmicos premium que mantienen la temperatura ideal
+            durante toda la noche.
+          </p>
+          <div class="about-values">
+            <div class="value-item">
+              <i class="fas fa-heart"></i>
+              <h4>Calidez</h4>
+            </div>
+            <div class="value-item">
+              <i class="fas fa-bed"></i>
+              <h4>Confort</h4>
+            </div>
+            <div class="value-item">
+              <i class="fas fa-star"></i>
+              <h4>Calidad</h4>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer class="footer">
+      <div class="container">
+        <div class="footer-content">
+          <!-- Logo y Eslogan -->
+          <div class="footer-section">
+            <img
+              src="assets/images/logo.png"
+              alt="Entre Sueños"
+              class="footer-logo"
+            />
+            <p class="footer-slogan">Hechas para abrigar tus sueños</p>
+          </div>
+
+          <!-- Contacto -->
+          <div class="footer-section">
+            <h4>Contacto</h4>
+            <div class="contact-info">
+              <a href="https://wa.me/573176750772" target="_blank">
+                <i class="fab fa-whatsapp"></i> +57 317 675 0772
+              </a>
+              <a href="https://wa.me/573502838010" target="_blank">
+                <i class="fab fa-whatsapp"></i> +57 350 283 8010
+              </a>
+            </div>
+          </div>
+
+          <!-- Redes Sociales -->
+          <div class="footer-section">
+            <h4>Síguenos</h4>
+            <div class="social-links">
+              <a
+                href="https://www.instagram.com/sabanasentresuenos"
+                target="_blank"
+                title="Instagram"
+              >
+                <i class="fab fa-instagram"></i> @sabanasentresuenos
+              </a>
+              <a
+                href="https://www.tiktok.com/@entresabanas_sue"
+                target="_blank"
+                title="TikTok"
+              >
+                <i class="fab fa-tiktok"></i> @entresabanas_sue
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <div class="footer-bottom">
+          <p>
+            &copy; 2026 Entre Sueños - Sábanas Térmicas Colombia. Todos los
+            derechos reservados.
+          </p>
+        </div>
+      </div>
+    </footer>
+
+    <!-- WhatsApp Flotante -->
+    <a
+      href="https://wa.me/573176750772?text=Hola!%20Me%20interesa%20conocer%20más%20sobre%20las%20sábanas%20térmicas"
+      class="whatsapp-float"
+      target="_blank"
+      title="Contáctanos por WhatsApp"
+    >
+      <i class="fab fa-whatsapp"></i>
+    </a>
+
+    <!-- JavaScript -->
+    <script src="js/script.js"></script>
+  </body>
+</html>
