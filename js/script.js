@@ -342,11 +342,30 @@ productCards.forEach((card) => {
 const whatsappButtons = document.querySelectorAll(".btn-whatsapp");
 
 whatsappButtons.forEach((button) => {
-  button.addEventListener("click", () => {
-    const card = button.closest(".product-card");
-    const productName = button.getAttribute("data-product");
-    const selectedSize = card.querySelector(".size-select").value;
+  const card = button.closest(".product-card");
+  const sizeSelect = card.querySelector(".size-select");
 
+  // Inicialmente deshabilitar el botón
+  button.disabled = true;
+
+  // Habilitar el botón solo si se selecciona una medida válida
+  sizeSelect.addEventListener("change", (e) => {
+    if (sizeSelect.value) {
+      button.disabled = false;
+    } else {
+      button.disabled = true;
+    }
+  });
+
+  button.addEventListener("click", () => {
+    const selectedSize = sizeSelect.value;
+    if (!selectedSize) {
+      // No permitir acción si no hay medida válida
+      alert("Por favor selecciona una medida antes de continuar.");
+      return;
+    }
+
+    const productName = button.getAttribute("data-product");
     // Obtener color/diseño seleccionado
     const activeColorOption = card.querySelector(
       ".color-option.active, .design-option.active",
@@ -471,7 +490,7 @@ document.querySelectorAll('.size-select').forEach(select => {
             'Sencilla 100x190': '$45.000',
             'Semidoble 120x190': '$50.000',
             'Doble 140x190': '$55.000',
-            'Queen 200x200': '$60.000'
+            'Queen 160x190': '$60.000'
         };
         
         const selectedSize = e.target.value;
